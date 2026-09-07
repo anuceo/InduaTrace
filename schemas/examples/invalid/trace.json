@@ -1,0 +1,9 @@
+{
+  "trace_id": "TRC-000002",
+  "sign_id": "SGN-000001",
+  "trace_type": "auto_generated",
+  "geometry": {
+    "representation": "contour"
+  },
+  "notes": "Invalid: 'trace_type' must be one of human, jarvis, or merged."
+}

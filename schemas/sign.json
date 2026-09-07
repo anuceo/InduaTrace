@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://industrace.org/schema/sign.json",
+  "title": "IndusTrace Sign",
+  "description": "A visually identified sign or glyph instance.",
+  "type": "object",
+  "required": [
+    "sign_id",
+    "inscription_id",
+    "position"
+  ],
+  "properties": {
+    "sign_id": {
+      "type": "string"
+    },
+    "inscription_id": {
+      "type": "string"
+    },
+    "position": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "image_region": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        }
+      }
+    },
+    "orientation": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "visual_class": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "transcription": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "phonetic_value": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "semantic_associations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "variant_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

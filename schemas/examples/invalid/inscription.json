@@ -1,0 +1,5 @@
+{
+  "inscription_id": "INS-000002",
+  "writing_direction": "diagonal",
+  "notes": "Invalid: missing the required 'artifact_id' field, and 'writing_direction' is not one of the allowed enum values."
+}

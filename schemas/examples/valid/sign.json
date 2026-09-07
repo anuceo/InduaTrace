@@ -1,0 +1,21 @@
+{
+  "sign_id": "SGN-000001",
+  "inscription_id": "INS-000001",
+  "position": 0,
+  "image_region": {
+    "x": 10.0,
+    "y": 5.0,
+    "width": 6.0,
+    "height": 12.0
+  },
+  "orientation": 0.0,
+  "visual_class": null,
+  "transcription": null,
+  "phonetic_value": null,
+  "semantic_associations": [],
+  "variant_ids": [],
+  "source_ids": [
+    "SRC-000001"
+  ],
+  "notes": "First (leftmost) sign in the inscription line. No transcription or reading is asserted."
+}

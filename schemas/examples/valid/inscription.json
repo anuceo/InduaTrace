@@ -1,0 +1,19 @@
+{
+  "inscription_id": "INS-000001",
+  "artifact_id": "ART-000001",
+  "script_classification": null,
+  "writing_direction": "unknown",
+  "sign_ids": [
+    "SGN-000001"
+  ],
+  "region": {
+    "x": 10.0,
+    "y": 5.0,
+    "width": 40.0,
+    "height": 12.0
+  },
+  "source_ids": [
+    "SRC-000001"
+  ],
+  "notes": "Single line of signs across the upper register of the seal face."
+}

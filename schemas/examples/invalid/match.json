@@ -1,0 +1,9 @@
+{
+  "match_id": "MAT-000002",
+  "source_sign_id": "SGN-000001",
+  "candidate_sign_id": "SGN-000002",
+  "scores": {
+    "visual": 150.0
+  },
+  "notes": "Invalid: scores.visual exceeds the maximum: 100 constraint."
+}

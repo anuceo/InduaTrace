@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://industrace.org/schema/hypothesis.json",
+  "title": "IndusTrace Hypothesis",
+  "description": "A testable proposition derived from documented evidence.",
+  "type": "object",
+  "required": [
+    "hypothesis_id",
+    "statement",
+    "status"
+  ],
+  "properties": {
+    "hypothesis_id": {
+      "type": "string"
+    },
+    "statement": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "proposed",
+        "under_review",
+        "supported",
+        "weakly_supported",
+        "contradicted",
+        "rejected",
+        "undetermined"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "counter_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "confidence_basis": {
+      "type": "string"
+    },
+    "alternative_hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "modified_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

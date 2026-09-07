@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://industrace.org/schema/trace.json",
+  "title": "IndusTrace Trace",
+  "description": "A human or machine-generated geometric representation of a sign.",
+  "type": "object",
+  "required": [
+    "trace_id",
+    "sign_id",
+    "trace_type",
+    "geometry"
+  ],
+  "properties": {
+    "trace_id": {
+      "type": "string"
+    },
+    "sign_id": {
+      "type": "string"
+    },
+    "trace_type": {
+      "type": "string",
+      "enum": [
+        "human",
+        "jarvis",
+        "merged"
+      ]
+    },
+    "geometry": {
+      "type": "object",
+      "required": [
+        "representation"
+      ],
+      "properties": {
+        "representation": {
+          "type": "string",
+          "enum": [
+            "contour",
+            "stroke_graph",
+            "vector_path",
+            "point_cloud",
+            "polygon",
+            "other"
+          ]
+        },
+        "coordinate_system": {
+          "type": "string"
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "transform": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "rotation": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "scale": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "translation_x": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "translation_y": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "created_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "algorithm_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

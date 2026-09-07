@@ -1,0 +1,17 @@
+{
+  "evidence_id": "EVD-000001",
+  "evidence_type": "visual",
+  "source_ids": [
+    "SRC-000001"
+  ],
+  "related_object_ids": [
+    "MAT-000001",
+    "SGN-000001",
+    "SGN-000002"
+  ],
+  "observation": "SGN-000001 and SGN-000002 share a three-stroke intersecting pattern under normalized rotation.",
+  "measurement": 71.0,
+  "strength": "moderate",
+  "direction": "supports",
+  "notes": "Derived from the visual score recorded on MAT-000001. Visual similarity alone; no geographic, chronological, or linguistic evidence has been evaluated."
+}

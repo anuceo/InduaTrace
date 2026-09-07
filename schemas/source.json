@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://industrace.org/schema/source.json",
+  "title": "IndusTrace Source",
+  "description": "Provenance record for a primary or secondary information source.",
+  "type": "object",
+  "required": [
+    "source_id",
+    "source_type",
+    "title"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "artifact",
+        "photograph",
+        "manuscript",
+        "inscription",
+        "publication",
+        "catalog",
+        "database",
+        "museum_record",
+        "archaeological_report",
+        "translation",
+        "other"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "creator": {
+      "type": "string"
+    },
+    "date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "repository": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "citation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rights": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

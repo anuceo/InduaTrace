@@ -1,0 +1,6 @@
+{
+  "evidence_id": "EVD-000002",
+  "evidence_type": "visual",
+  "direction": "maybe",
+  "notes": "Invalid: 'direction' must be one of supports, contradicts, or neutral."
+}

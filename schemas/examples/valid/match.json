@@ -1,0 +1,20 @@
+{
+  "match_id": "MAT-000001",
+  "source_sign_id": "SGN-000001",
+  "candidate_sign_id": "SGN-000002",
+  "scores": {
+    "visual": 71.0,
+    "geometry": 64.0,
+    "topology": 58.0,
+    "stroke": 60.0
+  },
+  "counter_evidence": [
+    "EVD-000002"
+  ],
+  "supporting_evidence": [
+    "EVD-000001"
+  ],
+  "status": "candidate",
+  "algorithm_version": "shape-match-0.1.0",
+  "notes": "SGN-000002 is a sign instance from a different script corpus, documented outside this example fixture set; referenced here only to illustrate the match schema. A visual score of 71 does not imply a 71% chance of historical relationship."
+}

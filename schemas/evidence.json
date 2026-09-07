@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://industrace.org/schema/evidence.json",
+  "title": "IndusTrace Evidence",
+  "description": "A discrete, attributable piece of evidence that supports, contradicts, or is neutral toward a match or hypothesis.",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "evidence_type",
+    "direction"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string"
+    },
+    "evidence_type": {
+      "type": "string",
+      "enum": [
+        "visual",
+        "geometric",
+        "topological",
+        "stroke",
+        "historical",
+        "linguistic",
+        "geographic",
+        "chronological",
+        "archaeological",
+        "population_movement",
+        "counterexample",
+        "other"
+      ]
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_object_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "observation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "measurement": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "strength": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "weak",
+        "moderate",
+        "strong",
+        null
+      ]
+    },
+    "direction": {
+      "type": "string",
+      "enum": [
+        "supports",
+        "contradicts",
+        "neutral"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

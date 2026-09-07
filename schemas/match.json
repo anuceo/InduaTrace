@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://industrace.org/schema/match.json",
+  "title": "IndusTrace Match",
+  "description": "A measured correspondence between two sign representations.",
+  "type": "object",
+  "required": [
+    "match_id",
+    "source_sign_id",
+    "candidate_sign_id",
+    "scores"
+  ],
+  "properties": {
+    "match_id": {
+      "type": "string"
+    },
+    "source_sign_id": {
+      "type": "string"
+    },
+    "candidate_sign_id": {
+      "type": "string"
+    },
+    "scores": {
+      "type": "object",
+      "properties": {
+        "visual": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "geometry": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "topology": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "stroke": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "visual"
+      ]
+    },
+    "counter_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "supporting_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "candidate",
+        "possible",
+        "strong",
+        "rejected",
+        "insufficient_data"
+      ]
+    },
+    "algorithm_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

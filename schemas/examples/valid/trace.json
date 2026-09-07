@@ -1,0 +1,24 @@
+{
+  "trace_id": "TRC-000001",
+  "sign_id": "SGN-000001",
+  "trace_type": "human",
+  "geometry": {
+    "representation": "contour",
+    "coordinate_system": "normalized_unit_square",
+    "points": [
+      [0.1, 0.1],
+      [0.5, 0.05],
+      [0.9, 0.1],
+      [0.5, 0.95]
+    ]
+  },
+  "transform": {
+    "rotation": 0.0,
+    "scale": 1.0,
+    "translation_x": 0.0,
+    "translation_y": 0.0
+  },
+  "created_by": "human_annotator_01",
+  "algorithm_version": null,
+  "notes": "Manually traced from the normalized photograph. A corresponding trace_type=\"jarvis\" record for the same sign_id would be stored separately, never merged into this one."
+}

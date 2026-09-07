@@ -1,0 +1,6 @@
+{
+  "sign_id": "SGN-000003",
+  "inscription_id": "INS-000001",
+  "position": -1,
+  "notes": "Invalid: 'position' is negative, violating the minimum: 0 constraint."
+}

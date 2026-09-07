@@ -5,4 +5,6 @@ using IndusTrace
 
     @test IndusTrace.project_version() == v"0.1.0"
 
+    include("schema_test.jl")
+
 end

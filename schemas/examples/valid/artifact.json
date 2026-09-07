@@ -1,0 +1,25 @@
+{
+  "artifact_id": "ART-000001",
+  "artifact_type": "steatite_seal",
+  "culture": "Indus Valley Civilization",
+  "site": "Mohenjo-daro",
+  "region": "Sindh",
+  "country": "Pakistan",
+  "material": "steatite",
+  "dimensions": {
+    "length": 2.5,
+    "width": 2.5,
+    "height": 1.0,
+    "unit": "cm"
+  },
+  "estimated_date": "c. 2600-1900 BCE",
+  "collection": "National Museum, New Delhi",
+  "catalog_number": "NMND-81",
+  "provenance": [
+    "Excavated at Mohenjo-daro, DK-G area, 1927-1931 season"
+  ],
+  "source_ids": [
+    "SRC-000001"
+  ],
+  "notes": null
+}
