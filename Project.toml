@@ -1,0 +1,9 @@
+name = "IndusTrace"
+uuid = "36f2d3d8-45d0-4765-ae2b-87b0405eef50"
+authors = ["AnuAegis LLC"]
+version = "0.1.0"
+
+[deps]
+
+[compat]
+julia = "1.11"
